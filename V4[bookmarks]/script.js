@@ -1,0 +1,1 @@
+alert("Nikko Nikko Nii!!!");
