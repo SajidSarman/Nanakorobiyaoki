@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <svg width="50" height="50" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <filter id="glow">
-                <feGaussianBlur stdDeviation="4"/>
-            </filter>
-        </defs>
-        <!-- Donut shape with 3 segments: long, medium, small covering full ring -->
-        <circle cx="150" cy="150" r="100" fill="none" stroke="#004488" stroke-width="40" stroke-dasharray="180 50 140 50 100 50" stroke-linecap="round" opacity="0.5"/>
-        <circle cx="150" cy="150" r="100" fill="none" stroke="#88ccff" stroke-width="40" stroke-dasharray="180 50 140 50 100 50" stroke-linecap="round" filter="url(#glow)"/>
-    </svg>
+    <header>
+        <img src="led.svg" id="led" alt="">
+    </header>
+
     <br>
     <video src="Detroit-Become-Human-E3-2016-Trailer.mp4" height="255" controls autoplay loop muted></video>
     <br>
-    <audio src="Hostage-Detroit-Become-Human.mp3" controls autoplay loop></audio>
+    <audio src="Hostage-Detroit-Become-Human.mp3" controls autoplay loop muted></audio>
+
+    <iframe src="index.html" frameborder="0"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QD1pbWCJcKQ?si=FJU5ULjyJia9_T53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>

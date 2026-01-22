@@ -1,0 +1,10 @@
+<svg width="50" height="50" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="4"/>
+        </filter>
+    </defs>
+    <!-- Donut shape with 3 segments: long, medium, small covering full ring -->
+    <circle cx="150" cy="150" r="100" fill="none" stroke="#004488" stroke-width="40" stroke-dasharray="180 50 140 50 100 50" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="150" cy="150" r="100" fill="none" stroke="#88ccff" stroke-width="40" stroke-dasharray="180 50 140 50 100 50" stroke-linecap="round" filter="url(#glow)"/>
+</svg>
