@@ -1,5 +1,6 @@
 header{
-    background-color: #1d1c2a;
+    background-color: #1d1c2ac2;
+    border-radius: 10px;
     height: 60px;
     display: flex;
     /* justify-content: center; */
@@ -7,4 +8,45 @@ header{
 }
 #led{
     margin-left: 3px;
+}
+
+
+#vbg{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Prevents users from clicking the video */
+  z-index: -1; /* Places the video behind your content */
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #vbg { height: 56.25vw; } /* Maintains aspect ratio for wide screens */
+}
+@media (max-aspect-ratio: 16/9) {
+  #vbg { width: 177.78vh; } /* Maintains aspect ratio for tall screens */
+}
+
+
+.trailer{
+   margin-top: 20px;
+   /* border: #1d1c2a53 solid 10px; */
+   border-top:#1d1c2a00 solid 10px;
+   border-bottom: #1d1c2a00 solid 10px;
+   border-radius: 10px;
+   background-color: #1d1c2a79;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-right: 700px;
+   width: fit-content;
+
+}
+.tlrv{
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
 }
