@@ -1,5 +1,5 @@
 header{
-    background-color: #1d1c2ac2;
+    background-color: #1d1c2aea;
     border-radius: 10px;
     height: 60px;
     display: flex;
@@ -20,6 +20,12 @@ header{
   transform: translate(-50%, -50%);
   pointer-events: none; /* Prevents users from clicking the video */
   z-index: -1; /* Places the video behind your content */
+}
+#abg{
+  position: fixed;
+  width: 20%;
+  height: 50%; 
+  margin-left: 1000px;
 }
 
 @media (min-aspect-ratio: 16/9) {
