@@ -14,124 +14,51 @@
             padding: 0;
         }
 
+        /* specificity = 1 */
         h1 {
             font-family: "Momo Signature", cursive;
             /* font-size: 20px; */
 
         }
 
-        h2 {
-            text-align: center;
-            /* color: #f3cc5fc3; */
-            /* color: rgba(237, 123, 0, 0.463); */
-            color: hsla(193, 32%, 45%, 0.593);
-            text-transform: uppercase;
-            text-decoration: underline blue;
-            /* text-decoration-color: brown; */
-            /* text-decoration-style: dotted; */
-            text-decoration-thickness: 8px;
-            text-indent: 45px;
+        /* specificity = 10 */
+        .cyellow {
+            color: yellow;
+ 
         }
-        .lorem {
-            border: 2px solid red;
-            width: 155px;
-            word-break: break-all;
-            /* text-overflow: clip;
-            overflow: hidden; */
+        /* specificity = 1 + 10 */
+        h1.cred {
+            color: rgb(213, 132, 100);
+            background-color: rgb(121, 48, 48);
+
         }
 
-        p {
-            font-family: "Momo Signature", cursive;
-            font-size: 20px;
-            line-height: 4;
+        /* Universal Setector: 0
+           element selector and pseudo-elements: 1 
+           Class setectors, attribute selector and pseudo-classes: 10
+           ID selectors: 100
+           Inline styles: 1000
+           !importent flag: 10000
+        */
+
+        /* specificity = 10 */
+        [abcd=cred] {
+            background-color: blueviolet;
         }
 
-        .box {
-            background-color: rgb(150, 93, 82);
-        } 
-
-        .box1 {
-            color: rgb(196, 243, 130);
-            padding: 10px;
-            margin: 25px;
-            border: 2px solid rgb(244, 176, 30);
-            height: 200px;
-            box-sizing: border-box; /* padding-top-bottom[10+10] + border-top-bottom[1.6+1.6] + height[176.8]*/
+        /* specificity = 1+10+10+10+10+10 = 51  */
+        a.qaz.wsx.edc[zaq]:hover {
+            color: red;
         }
-        .box2 {
-            color: rgb(114, 29, 29);
-            padding: 10px;
-            margin: 25px;
-            border: 2px solid rgb(80, 27, 20);
-            height: 200px;
-            box-sizing: border-box;
-        }
-
-        .blue {
-            color: blue;
-            background-color: lightgray;
-            font-family: "Playwrite NZ Basic Guides", cursive;
-        }
-
-        .blue > p {
-            color: rgb(172, 241, 147);
-            background-color: rgb(236, 133, 126);
-            font-family: "Momo Signature", cursive;
-        }
-
-        a:link {
-            color: green;
-            background-color: lightblue;
-        }
-        a:hover {
-            background-color: rgb(241, 157, 157);
-        }
-        a:visited {
-            color: pink;
-        }
-        a:active{
-            background-color: black;
-        }
-        .green > p{
-            color: green;
-            background-color: aqua;
-        }
-
-        .f{
-            color: aqua;
-            background-color: rgb(206, 88, 88);
-        }
-        .f :first-child {
-            background-color: black;
+        a.qaz.wsx.edc[zaq] {
+            color: yellow;
         }
 
     </style>
 </head>
 <body>
-    <h1>Test</h1>
-    <h2>about Test</h2>
-    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus quam exercitationem.</p>
-    <p>Test123456789</p>
-    <p>fgasjhaskjdhfgaksjhdfgka</p>
-    <div class="box box1">I am a box</div>
-    <div class="box box2">I am a another box</div>
-
-    <div class="blue">gdfgdfgdfgdffgdfgfg
-        <p>Lrem ipsum dolor sit amet consectetur adipisicing elit. Illum, cum optio expedita, veritatis repudiandae neque quaerat nemo quos quibusdam rerum assumenda ipsam temporibus ipsa ducimus ipsum quam odio doloribus accusamus.</p>
-        <article>
-            <p>Lorem ipsum <a href="https://www.google.com">Google</a> dolor sit amet consectetur adipisicing elit. Illum, cum optio expedita, veritatis repudiandae neque quaerat nemo quos quibusdam rerum assumenda ipsam temporibus ipsa ducimus ipsum quam odio doloribus accusamus.</p>
-        </article>  
-    </div>
-    <div id="green">
-        <p>tsdfsdfdwsfsklkfjsldkfs</p>
-        <article>
-            <p>sdgsdhgsdfjgsyeerygeruygeuyrgeyrf</p>
-        </article>
-    </div>
-
-    <footer class="f">
-        <p>test1</p>
-        <p>test2</p>
-    </footer>
+    <h1 class="cyellow cred cgreen" abcd="cred">ABCD</h1>
+    <a href="" class="qaz wsx edc" zaq="aa"><h1>Test</h1>
+    </a>
 </body>
 </html>
