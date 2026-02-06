@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Display Proparty</title>
+    <title>Document</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+        /* box-shadow: h-offset v-offset blur spread color inset; */
         .box {
-            background-color: blueviolet;
-            display: inline-block;
-            width: 345px;
-            padding: 45px;
-            margin: 45px;
-            justify-content: center;
+            /* border: 2px solid black; */
+            padding: 34px;
+            box-shadow: 4px 6px 8px rgb(93, 157, 157);
         }
-        .box1 {
-            display: flex;
-            /* visibility: hidden; */
+
+        /* text-shadow: h-offset v-offset blur color; */
+        .text-element {
+            text-shadow: 4px 6px 5px rgb(43, 144, 120);
+            outline: 2px solid black;
+            outline-offset: 3px;
+            border-radius: 10px;
+            border: 2px solid rgb(135, 85, 85);
         }
     </style>
 </head>
+
 <body>
-    <div class="box box1">i am a box</div>
-    <div class="box">another box</div>
-    <span>gud</span>
-    <span>gud</span>
+    <div class="box text-element">
+        i am a box
+    </div>
+    <p class="text-element">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem id repellat iure
+        cum esse voluptas natus dolore quae accusantium, libero qui quis mollitia, eligendi ipsam repellendus iste minus
+        placeat. Exercitationem, dolore!</p>
 </body>
+
 </html>
