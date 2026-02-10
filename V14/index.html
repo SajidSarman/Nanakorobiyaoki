@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS List</title>
     <style>
-        /* box-shadow: h-offset v-offset blur spread color inset; */
-        .box {
-            /* border: 2px solid black; */
-            padding: 34px;
-            box-shadow: 4px 6px 8px rgb(93, 157, 157);
+        * {
+            padding: 0;
+            margin: 0;
         }
+        nav ul {
+            display: flex;
 
-        /* text-shadow: h-offset v-offset blur color; */
-        .text-element {
-            text-shadow: 4px 6px 5px rgb(43, 144, 120);
-            outline: 2px solid black;
-            outline-offset: 3px;
-            border-radius: 10px;
-            border: 2px solid rgb(135, 85, 85);
+        }
+        nav ul li {
+            /* display: inline; */
+            /* list-style: circle; */
+            /* list-style-type: "💀"; */
+            list-style: none;
+            padding: 23px;
+            /* background-color: yellow; */
+            /* list-style-position: inside; */
+            /* border: 2px solid black; */
+            /* list-style: "💀" inside; */
+            /* list-style: inside url("https://no-cdn.shortpixel.ai/client/to_avif,q_lossy,ret_wait/https://shortpixel.com/blog/wp-content/uploads/2023/12/nyan-cat.gif"); */
+            /* list-style-image: url("https://no-cdn.shortpixel.ai/client/to_avif,q_lossy,ret_wait/https://shortpixel.com/blog/wp-content/uploads/2023/12/nyan-cat.gif"); */
         }
     </style>
 </head>
-
 <body>
-    <div class="box text-element">
-        i am a box
-    </div>
-    <p class="text-element">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem id repellat iure
-        cum esse voluptas natus dolore quae accusantium, libero qui quis mollitia, eligendi ipsam repellendus iste minus
-        placeat. Exercitationem, dolore!</p>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
 </body>
-
 </html>
