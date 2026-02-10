@@ -3,38 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS List</title>
+    <title>Overflow</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        nav ul {
-            display: flex;
-
-        }
-        nav ul li {
-            /* display: inline; */
-            /* list-style: circle; */
-            /* list-style-type: "💀"; */
-            list-style: none;
-            padding: 23px;
-            /* background-color: yellow; */
-            /* list-style-position: inside; */
-            /* border: 2px solid black; */
-            /* list-style: "💀" inside; */
-            /* list-style: inside url("https://no-cdn.shortpixel.ai/client/to_avif,q_lossy,ret_wait/https://shortpixel.com/blog/wp-content/uploads/2023/12/nyan-cat.gif"); */
-            /* list-style-image: url("https://no-cdn.shortpixel.ai/client/to_avif,q_lossy,ret_wait/https://shortpixel.com/blog/wp-content/uploads/2023/12/nyan-cat.gif"); */
+        .box {
+            width: 30vw;
+            height: 40vh;
+            border: 2px solid black;
+            overflow: hidden auto;
+            /* overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll; */
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam, reprehenderit modi nesciunt velit mollitia earum ratione corrupti reiciendis repudiandae rem aut odit neque dolore exercitationem! Assumenda nam numquam, id mollitia ducimus tenetur voluptatibus, incidunt neque quibusdam, alias expedita. Culpa ex consequatur dicta, perferendis asperiores expedita ipsum vitae quo vel harum neque deserunt nemo impedit labore. Error alias eum sed, nam perspiciatis adipisci in illum, consequuntur laborum incidunt, eligendi nihil expedita. Officia quidem, possimus vitae itaque voluptate est et tenetur.
+    </div>
 </body>
 </html>
